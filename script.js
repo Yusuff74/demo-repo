@@ -37,6 +37,11 @@ obj.date = 2018
 obj.directors[0] = 'j'
 obj2.cast['a'] = 'b'
 
+for (key in obj){
+    if (typeof obj[key] !== "function"){
+        console.log(key, obj[key])
+    }
+    
+}
 
-
-console.log(obj, obj2, obj.cal(), obj2.cal())
+// console.log(obj, obj2, obj.cal(), obj2.cal())
